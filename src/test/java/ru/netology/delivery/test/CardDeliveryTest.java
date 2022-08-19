@@ -14,6 +14,7 @@ public class CardDeliveryTest {
 
     @Test
     void shouldTestPlanAndReplanMeeting() {
+        Configuration.holdBrowserOpen = true;
         open("http://localhost:9999/");
         var validUser = DataGenerator.Registration.generateUser("ru");
         var daysToAddForFirstMeeting = 4;
