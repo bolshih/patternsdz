@@ -42,11 +42,8 @@ public class DataGenerator {
         }
 
         public static UserInfo generateUser(String locale) {
-//            UserInfo user = new UserInfo();
-//            user.city = generateCity(locale);
-//            user.name = generateName(locale);
-//            user.phone = generatePhone(locale);
-            return new UserInfo(generateCity(locale), generateName(locale), generatePhone(locale));
+        UserInfo user = new UserInfo(generateCity(locale), generateName(locale), generatePhone(locale));
+            return user;
         }
     }
 
